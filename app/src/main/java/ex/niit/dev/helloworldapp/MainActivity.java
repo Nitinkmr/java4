@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         System.out.println("onCreate called");
 
         resultView = (TextView) findViewById(R.id.resultView);
-        Button btn1 = (Button)findViewById(R.id.btn1);
+        Button btn1 = (Button) findViewById(R.id.btn1);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 MainActivity.this.resultView.setText("1");
             }
         });
-        Button btn2 = (Button)findViewById(R.id.btn2);
+        Button btn2 = (Button) findViewById(R.id.btn2);
         btn2.setOnClickListener(this);
-        Button btn3 = (Button)findViewById(R.id.btn3);
+        Button btn3 = (Button) findViewById(R.id.btn3);
         btn3.setOnClickListener(this);
     }
 
@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         System.out.println("onResume called");
     }
 
-    public void onBtnPressed(View view){
+    public void onBtnPressed(View view) {
         //
-        Button button = (Button)view;
-        if (button.getText().equals("4")){
+        Button button = (Button) view;
+        if (button.getText().equals("4")) {
 
         }
     }
@@ -65,8 +65,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View v) {
-       // String text = resultView.getText().toString();
-        switch (v.getId()){
+        // String text = resultView.getText().toString();
+        switch (v.getId()) {
             case R.id.btn2:
                 //
                 resultView.append("2");
